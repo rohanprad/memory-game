@@ -15,8 +15,9 @@ function App() {
       setScore(score + 1)
       club.clicked = true
     } else {
-      console.log("Game Over")
-      setBestScore(score)
+      alert("Game Over")
+      if (score > bestScore)
+        setBestScore(score)
       setScore(0)
     }
   }

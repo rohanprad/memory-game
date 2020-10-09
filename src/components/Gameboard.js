@@ -10,7 +10,7 @@ function Gameboard(props) {
         <div className="container">
             {clubs.map(club => {
                 return (
-                    <div key={club.name} className="clubDiv" onClick={updateScore}>
+                    <div key={club.name} className="clubDiv" onClick={updateScore} id={club.name}>
                         <img src={club.logo} alt="Club Logo" id={club.name} />
                         <p id={club.name}>{club.name}</p>
                     </div>

@@ -18,6 +18,7 @@ function App() {
       alert("Game Over")
       if (score > bestScore)
         setBestScore(score)
+      setClubs(clubs.map(club => { return { ...club, clicked: false } }))
       setScore(0)
     }
   }
